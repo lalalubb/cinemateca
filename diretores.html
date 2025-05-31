@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Define as fontes da página*/
+            background-color: rgb(255, 217, 223);
+            /*Define a cor de fundo*/
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            /*Cor da fonte*/
+            text-decoration: none;
+            /*Retira o sublinhado dos links*/
+            font-weight: bold;
+            /*Fonte em negrito*/
+            padding: 10px;
+            /*Espaçamento*/
+        }
+
+        nav a:hover {
+            /*Gera ação ao passar o Mouse*/
+            color: rgb(72, 94, 36);
+            /*Muda a cor da fonte*/
+            font-size: larger;
+            /*Aumenta o tamanho da fonte*/
+            font-weight: bolder;
+            /*Fonte em negrito*/
+        }
+
+        .title {
+            font-weight: bold;
+            /*Fonte em negrito*/
+        }
+
+        ol,
+        li,
+        ul {
+            line-height: 25px;
+            /*Espaçamento de linha*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/header.png" alt="Header" width="95%" height="300px">
+    </header>
+    <nav>
+        <div><a href="index.html">Início</a> |
+            <a href="diretores.html">Diretores e Países</a> |
+            <a href="paises.html">Tabela de Produção</a> |
+            <a href="populares.html">Filmes Populares</a>
+        </div>
+    </nav>
+    <h1>Diretores mais famosos de cada país</h1>
+    <p>A seguir, veremos quais são os maiores diretores de cada um dos países que mais produzem filmes.</p>
+    <ol type="I"> <!-- Lista ordenada, por número romano-->
+        <li class="title">Índia:</li>
+        <ul type="square"> <!-- Lista não ordenada dentro da lista ordenada com marcação quadrada -->
+            <li>Satyaji Ray</li>
+            <li>Rajkumar Hirani</li>
+        </ul>
+        <li class="title">Estados Unidos</li>
+        <ul type="square">
+            <li>Steven Spielberg</li>
+            <li>Martin Scorsese</li>
+        </ul>
+        <li class="title">México</li>
+        <ul type="square">
+            <li>Alfonso Cuarón</li>
+            <li>Guillermo Del Toro</li>
+        </ul>
+        <li class="title">Japão</li>
+        <ul type="square">
+            <li>Akira Kurosawa</li>
+            <li>Hayao Miyazaki</li>
+        </ul>
+        <li class="title">Espanha</li>
+        <ul type="square">
+            <li>Pedro Almodóvar</li>
+            <li>Luis Buñuel</li>
+        </ul>
+        <li class="title">França</li>
+        <ul type="square">
+            <li>Jean-Luc Godard</li>
+            <li>François Truffaut</li>
+        </ul>
+    </ol>
+</body>
+
+</html>

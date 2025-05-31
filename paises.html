@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 217, 223);
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: darkolivegreen;
+            font-size: larger;
+            font-weight: bold;
+            /*Até aqui, o comando é o mesmo para todas as páginas*/
+
+        }
+
+        table {
+            width: 600px;
+            /*Largura da tabela*/
+            border-collapse: collapse;
+            /*Controla as bordas. Collapse: Junta as bordas 
+        das células e remove os espaços entre elas*/
+        }
+
+        thead {
+            font-weight: bold;
+            /*Fonte em negrito*/
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            /*Bordas da tabela*/
+            padding: 4px;
+            /*Espaçamento*/
+        }
+
+        .num {
+            text-align: center;
+            /*Alinhamento dos números ao centro*/
+        }
+
+        caption {
+            border: 1px solid black;
+            /*Bordas*/
+            border-bottom: none;
+            /*Retira as bordas da parte inferior*/
+            font-size: 1.0m;
+            /*Tamanho da fonte*/
+            font-weight: bold;
+            /*Fonte em negrito*/
+            padding: 5px;
+            /*Espaçamento*/
+            background-color: rgb(172, 94, 152);
+            /*Cor de fundo*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/header.png" alt="Header" width="95%" height="300px">
+    </header>
+    <nav>
+        <div><a href="index.html">Início</a> |
+            <a href="diretores.html">Diretores e Países</a> |
+            <a href="paises.html">Tabela de Produção</a> |
+            <a href="populares.html">Filmes Populares</a>
+        </div>
+    </nav>
+
+    <body>
+        <h1>Países que mais produzem filme no mundo</h1>
+        <table>
+            <caption>Países que mais produzem filme no mundo</caption> <!-- Legenda da tabela -->
+            <thead> <!-- Cabeça/Cabeçalho da tabela -->
+                <tr>
+                    <td>País</td>
+                    <td>Filmes produzidos (2022)</td>
+                    <td>Receita Bilheteria USD (2022)</td>
+                </tr>
+            </thead> <!-- Corpo da tabela -->
+            <tbody>
+                <tr> <!-- Linha -->
+                    <td>Índia</td> <!-- Coluna -->
+                    <td class="num">1.691</td>
+                    <td class="num">1,3 bilhões</td>
+                </tr>
+                <tr>
+                    <td>Estados Unidos</td>
+                    <td class="num">1.361</td>
+                    <td class="num">7,5 bilhões</td>
+                </tr>
+                <tr>
+                    <td>México</td>
+                    <td class="num">1.289</td>
+                    <td class="num">0,63 bilhões</td>
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td class="num">634</td>
+                    <td class="num">1,5 bilhões</td>
+                </tr>
+                <tr>
+                    <td>Espanha</td>
+                    <td class="num">320</td>
+                    <td class="num">0,4 bilhões</td>
+                </tr>
+                <tr>
+                    <td>França</td>
+                    <td class="num">287</td>
+                    <td class="num">1,1 bilhões</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
