@@ -47,32 +47,34 @@
             margin: 40px;
         }
 
+        /*-----------------------------------------------*/
+
         h1 {
             text-align: center;
         }
 
-        h3 {
-            color: darkgreen;
-            text-align: center;
+        .grid-container {  /* Contêiner externo que organiza os itens filhos lado a lado */
+            display: flex;   /* Coloca os itens em linha (lado a lado) */
+            flex-wrap: wrap;  /* Permite que os itens quebrem linha se não couberem */
+            justify-content: center;  /* Centraliza os itens na horizontal */
+            gap: 40px;   /* Espaçamento entre os filmes */
         }
 
         .container {
-            display: inline-block;
-            padding-left: 200px;
-            padding-bottom: 30px;
+            width: 500px;  /* Largura fixa para manter os tamanhos iguais */
+            text-align: center;  /* Centraliza o texto (título) e imagem */
         }
 
-        #miranha {
-            width: fit-content;
-            /*Só ocupa o necessário*/
-            margin: 0 auto;
-            /*Centraliza automaticamente*/
-            padding-bottom: 50px;
+        .container h3 {
+            color: darkgreen;
+        }
+
+        .container img {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* deslocamento-x, deslocamento-y, blur, cor */
         }
 
         .newsletter {
             background-color: #ffc0cb;
-            /* rosa */
             padding: 20px;
             border-radius: 20px;
             text-align: center;
@@ -111,6 +113,7 @@
         footer {
             padding-bottom: 50px;
         }
+
     </style>
 </head>
 
@@ -127,57 +130,59 @@
     </nav>
     <main>
         <h1>Filmes mais populares de cada década</h1>
-        <div class="container">
-            <h3>1900: The History of Kelly Gang (1906)</h3>
-            <img src="imagens/kellygang.webp" alt="The History of Kelly Gang" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1910: O Nascimento de uma Nação (1915)</h3>
-            <img src="imagens/birthofanation.webp" alt="O nascimento de uma nação" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1920: Metrópolis (1927)</h3>
-            <img src="imagens/metropolis.webp" alt="Metrópolis" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1930: O Mágico de Oz (1939)</h3>
-            <img src="imagens/magicodeoz.webp" alt="O Mágico de Oz" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1940: Casablanca (1942)</h3>
-            <img src="imagens/casablanca.webp" alt="Casablanca" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1950: 12 Homens e uma Sentença (1957)</h3>
-            <img src="imagens/12homens.webp" alt="12 homens e uma sentença" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1960: Três Homens em Conflito (1968)</h3>
-            <img src="imagens/3homens.webp" alt="Três Homens em Conflito" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1970: O Poderoso Chefão (1972)</h3>
-            <img src="imagens/godfather.webp" alt="O Poderoso Chefão" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1980: O Império Contra-Ataca (1980)</h3>
-            <img src="imagens/starwars.webp" alt="O Império Contra-Ataca" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>1990: Um Sonho de Liberdade (1994)</h3>
-            <img src="imagens/sonhodeliberdade.webp" alt="Um Sonho de Liberdade" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>2000: O Cavaleiro das Trevas (2008)</h3>
-            <img src="imagens/cavaleirodastrevas.webp" alt="O Cavaleiro das Trevas" height="300px" width="500px">
-        </div>
-        <div class="container">
-            <h3>2010: A Origem (2010)</h3>
-            <img src="imagens/inception.webp" alt="A Origem" height="300px" width="500px">
-        </div>
-        <div id="miranha">
-            <h3>2020: Sem Volta para Casa (2021)</h3>
-            <img src="imagens/miranha.webp" alt="Sem Volta para Casa" height="300px" width="500px">
+        <div class="grid-container">
+            <div class="container">
+                <h3>1900: The History of Kelly Gang (1906)</h3>
+                <img src="imagens/kellygang.webp" alt="The History of Kelly Gang" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1910: O Nascimento de uma Nação (1915)</h3>
+                <img src="imagens/birthofanation.webp" alt="O nascimento de uma nação" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1920: Metrópolis (1927)</h3>
+                <img src="imagens/metropolis.webp" alt="Metrópolis" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1930: O Mágico de Oz (1939)</h3>
+                <img src="imagens/magicodeoz.webp" alt="O Mágico de Oz" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1940: Casablanca (1942)</h3>
+                <img src="imagens/casablanca.webp" alt="Casablanca" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1950: 12 Homens e uma Sentença (1957)</h3>
+                <img src="imagens/12homens.webp" alt="12 homens e uma sentença" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1960: Três Homens em Conflito (1968)</h3>
+                <img src="imagens/3homens.webp" alt="Três Homens em Conflito" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1970: O Poderoso Chefão (1972)</h3>
+                <img src="imagens/godfather.webp" alt="O Poderoso Chefão" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1980: O Império Contra-Ataca (1980)</h3>
+                <img src="imagens/starwars.webp" alt="O Império Contra-Ataca" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>1990: Um Sonho de Liberdade (1994)</h3>
+                <img src="imagens/sonhodeliberdade.webp" alt="Um Sonho de Liberdade" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>2000: O Cavaleiro das Trevas (2008)</h3>
+                <img src="imagens/cavaleirodastrevas.webp" alt="O Cavaleiro das Trevas" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>2010: A Origem (2010)</h3>
+                <img src="imagens/inception.webp" alt="A Origem" height="300px" width="500px">
+            </div>
+            <div class="container">
+                <h3>2020: Sem Volta para Casa (2021)</h3>
+                <img src="imagens/miranha.webp" alt="Sem Volta para Casa" height="300px" width="500px">
+            </div>
         </div>
     </main>
     <footer>
