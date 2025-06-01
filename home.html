@@ -18,13 +18,24 @@
             width: 100%;
         }
 
+        nav div {
+            display: flex;
+            /* Deixa os links em linha */
+            gap: 30px;
+            /* Espaço entre os links */
+            justify-content: center;
+            /* Centraliza na página */
+            margin-top: 20px;
+            /* Dá espaço entre a imagem e o nav */
+            font-size: 18px;
+        }
+
         nav a {
             color: black;
             text-decoration: none;
-            margin: 60px;
-            padding-top: 30px;
-        
+
         }
+
 
         nav a:hover {
             color: darkolivegreen;
@@ -32,29 +43,39 @@
             font-weight: bold;
         }
 
-        main{
+        main {
+            margin: 40px;
+        }
+
+        main {
             margin: 40px;
         }
 
         h1 {
             text-align: center;
         }
-        h3 {
+
+        .card {
+            width: 750px;
+            padding: 20px;
             text-align: center;
+            margin: auto;
         }
 
-        .container {
-            display: flex;
-            width: fit-content;
-            margin: 0 auto;
-            /* ou center, se quiser centralizar verticalmente */
-            gap: 30px;
-            /* espaço entre a imagem e o texto */
-            max-width: 700px;
-            /* opcional para limitar largura total */
+        .card h2 {
+            color: rgb(72, 94, 35);
         }
 
-        
+        .card img {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            /* deslocamento-x, deslocamento-y, blur, cor */
+        }
+
+        .card p {
+            text-align: justify;
+            font-size: large;
+        }
+
         .newsletter {
             background-color: #ffc0cb;
             /* rosa */
@@ -104,58 +125,82 @@
         <img src="imagens/header.png" alt="Header" width="100%" height="300px">
     </header>
     <nav>
-        <div><a href="home.html">Início</a> |
-            <a href="diretores.html">Diretores e Países</a> |
-            <a href="paises.html">Tabela de Produção</a> |
+        <div><a href="home.html">Início</a> 
+            <a href="diretores.html">Diretores e Países</a> 
+            <a href="paises.html">Tabela de Produção</a> 
             <a href="populares.html">Filmes Populares</a>
         </div>
     </nav>
     <main>
         <h1>Mulheres no cinema</h1>
-        <h3>Retrato de uma jovem em chamas (2020)</h3>
-        <div class="container">
-            <img src="imagens/retratodeumajovem.webp" alt="Poster do filme Retrato de uma Jovem em chamas" width="350px"
-                height="400px">
-            <p><b>Dirigido por Céline Sciamma.</b><br>
-                Na França do século XVIII, Marianne (Noémie Merlant) é uma jovem pintora que recebe a tarefa de pintar
-                um
-                retrato de Héloïse (Adèle Haenel) para seu casamento sem que ela saiba. Passando seus dias observando
-                Héloïse e
-                as noites pintando, Marianne se vê cada vez mais próxima de sua modelo conforme os últimos dias de
-                liberdade
-                dela antes do iminente casamento se veem prestes a acabar.<br>
-                <a target="_blank" href="https://www.omelete.com.br/filmes/criticas/retrato-de-uma-jovem-em-chamas">Leia
-                    na
-                    íntegra.</a>
-            </p>
+
+        <div class="card">
+            <h2>Céline Sciamma </h2>
+            <img src="imagens/celinesciamma.png" alt="Céline Sciamma" width="550px" height="350px">
+            <p>Céline Sciamma (França) é a mente por trás de Retrato de uma Jovem em Chamas (2019), um dos filmes mais
+                relevantes da década em termos de narrativa queer e linguagem visual. Seu trabalho é cirúrgico na
+                construção de tensão emocional e simbologia. Sciamma explora desejo, silêncio e identidade com precisão
+                minimalista, consolidando-se como uma das principais vozes do cinema europeu contemporâneo. Seu
+                diferencial está na direção sensível com rigor estético, transformando olhares em discurso político.</p>
         </div>
-        <h3>Precisamos falar sobre o Kevin(2011)</h3>
-        <div class="container">
-            <img src="imagens/talkaboutkevin.webp" alt="Poster do filme Precisamos falar sobre o Kevin" width="300px"
-                height="300px">
-            <p><b>Dirigido por Lynne Ramsey.</b><br>
-                Em Precisamos Falar Sobre o Kevin, Eva (Tilda Swinton) mora sozinha e teve sua casa e carro pintados de
-                vermelho. Maltratada nas ruas, ela tenta recomeçar a vida com um novo emprego e vive temorosa, evitando
-                as
-                pessoas. O motivo desta situação vem de seu passado, da época em que era casada com Franklin (John C.
-                Reilly),
-                com quem teve dois filhos: Kevin (Jasper Newell/Ezra Miller) e Lucy (Ursula Parker). Seu relacionamento
-                com
-                o
-                primogênito, Kevin, sempre foi complicado, desde quando ele era bebê. Com o tempo a situação foi se
-                agravando
-                mas, mesmo conhecendo o filho muito bem, Eva jamais imaginaria do que ele seria capaz de fazer.<br>
-                <a target="_blank" href="https://www.planocritico.com/critica-precisamos-falar-sobre-o-kevin/">Leia na
-                    íntegra.</a>
-            </p>
+        <div class="card">
+            <h2>Laís Bodanzky</h2>
+            <img src="imagens/laisbodanzky.png" alt="Laís Bodanzky" width="550px" height="350px">
+            <p>Laís Bodanzky (Brasil) dirigiu Bicho de Sete Cabeças (2000), um dos filmes mais importantes do cinema
+                brasileiro pós-retomada. A obra denunciou os abusos do sistema manicomial com realismo e contundência,
+                pavimentando o caminho para um cinema socialmente engajado e tecnicamente maduro. Bodanzky tem
+                trajetória sólida também na gestão cultural e políticas públicas, o que amplia seu alcance além da
+                direção — é uma operadora estratégica do setor audiovisual nacional.</p>
         </div>
+        <div class="card">
+            <h2>Sofia Coppola</h2>
+            <img src="imagens/sofiacoppola.png" alt="Sofia Coppola" width="550px" height="350px">
+            <p>Sofia Coppola (EUA) consolidou-se como uma diretora com assinatura autoral clara, apesar de carregar o
+                peso de um sobrenome lendário. Com Encontros e Desencontros (2003), venceu o Oscar de Roteiro Original e
+                posicionou-se como voz relevante da melancolia contemporânea. Filmes como Maria Antonieta e O Estranho
+                que Nós Amamos mantêm seu foco em personagens femininas isoladas em ambientes opressivos e esteticamente
+                refinados. Coppola domina o espaço entre o mainstream e o cinema de arte, sendo um case raro de branding
+                pessoal com apelo indie e reputação sólida no circuito internacional.</p>
+        </div>
+        <div class="card">
+            <h2>Chantal Akerman</h2>
+            <img src="imagens/chantalakerman.png" alt="Chantal Akerman" width="550px" height="350px">
+            <p>Chantal Akerman (Bélgica) é amplamente reconhecida como uma das vozes mais radicais e influentes do
+                cinema experimental. Seu filme Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles (1975) foi eleito o
+                melhor filme de todos os tempos pela crítica da Sight & Sound em 2022, desbancando clássicos canônicos.
+                Akerman levou ao limite a ideia de tempo real, repetição e silêncio como recursos narrativos, criando
+                experiências estéticas desconfortáveis e transformadoras. Sua obra é referência em estudos de gênero,
+                tempo e rotina, influenciando tanto o cinema quanto a videoarte.</p>
+        </div>
+        <div class="card">
+            <h2>Agnes Varda</h2>
+            <img src="imagens/agnesvarda.png" alt="Agnes Varda" width="550px" height="350px">
+            <p>Agnès Varda (França) foi uma das figuras mais influentes do cinema mundial e a única mulher associada
+                diretamente ao núcleo da Nouvelle Vague. Sua filmografia, que inclui Cléo das 5 às 7 e Os Catadores e
+                Eu, rompeu fronteiras entre ficção e documentário, sempre com um olhar poético, político e profundamente
+                pessoal. Varda operava com alta autonomia criativa e pensamento visual à frente de seu tempo, sendo
+                reconhecida tardiamente com um Oscar honorário. Sua marca está na reinvenção constante da linguagem
+                cinematográfica com baixo orçamento e impacto cultural massivo — um modelo de gestão autoral resiliente
+                e inovador.</p>
+        </div>
+        <div class="card">
+            <h2>Charlotte Wells</h2>
+            <img src="imagens/charlottewells.png" alt="Charlotte Wells" width="550px" height="350px">
+            <p>Charlotte Wells (Escócia) estreou com Aftersun (2022), um dos filmes mais aclamados da década por sua
+                abordagem emocional contida e estrutura narrativa fragmentada. Em sua estreia, Wells demonstrou domínio
+                absoluto da linguagem cinematográfica, criando uma experiência sensorial com altíssima carga simbólica.
+                Seu nome entrou no radar global como uma diretora com assinatura autoral desde o primeiro longa — uma
+                raridade no mercado.</p>
+        </div>
+        </main>
+        <footer>
         <div class="newsletter">
             <h4>Assine nossa newsletter!</h4>
             <input type="email" placeholder="Digite seu e-mail">
             <br>
             <button>Enviar</button>
         </div>
-    </main>
+        </footer>
 </body>
 
 </html>

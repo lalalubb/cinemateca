@@ -18,13 +18,24 @@
             width: 100%;
         }
 
+        nav div {
+            display: flex;
+            /* Deixa os links em linha */
+            gap: 30px;
+            /* Espaço entre os links */
+            justify-content: center;
+            /* Centraliza na página */
+            margin-top: 20px;
+            /* Dá espaço entre a imagem e o nav */
+            font-size: 18px;
+        }
+
         nav a {
             color: black;
             text-decoration: none;
-            margin: 60px;
-            padding-top: 30px;
-        
+
         }
+
 
         nav a:hover {
             color: darkolivegreen;
@@ -40,12 +51,15 @@
             font-weight: bold;
             /*Fonte em negrito*/
         }
-
+        p{
+            font-size: large;
+        }
         ol,
         li,
         ul {
             line-height: 25px;
             /*Espaçamento de linha*/
+            font-size: large;
         }
         .newsletter {
             background-color: #ffc0cb;
@@ -96,9 +110,9 @@
         <img src="imagens/header.png" alt="Header" width="100%" height="300px">
     </header>
     <nav>
-        <div><a href="home.html">Início</a> |
-            <a href="diretores.html">Diretores e Países</a> |
-            <a href="paises.html">Tabela de Produção</a> |
+        <div><a href="home.html">Início</a> 
+            <a href="diretores.html">Diretores e Países</a> 
+            <a href="paises.html">Tabela de Produção</a> 
             <a href="populares.html">Filmes Populares</a>
         </div>
     </nav>

@@ -18,30 +18,41 @@
             width: 100%;
         }
 
+        nav div {
+            display: flex;
+            /* Deixa os links em linha */
+            gap: 30px;
+            /* Espaço entre os links */
+            justify-content: center;
+            /* Centraliza na página */
+            margin-top: 20px;
+            /* Dá espaço entre a imagem e o nav */
+            font-size: 18px;
+        }
+
         nav a {
             color: black;
             text-decoration: none;
-            margin: 60px;
-            padding-top: 30px;
-        
+
         }
+
 
         nav a:hover {
             color: darkolivegreen;
             font-size: larger;
             font-weight: bold;
         }
-
-        main{
+        main {
             margin: 40px;
         }
 
         table {
-            width: 600px;
+            width: 700px;
             /*Largura da tabela*/
             border-collapse: collapse;
             /*Controla as bordas. Collapse: Junta as bordas 
         das células e remove os espaços entre elas*/
+        font-size: large;
         }
 
         thead {
@@ -76,6 +87,7 @@
             background-color: rgb(172, 94, 152);
             /*Cor de fundo*/
         }
+
         .newsletter {
             background-color: #ffc0cb;
             /* rosa */
@@ -122,12 +134,12 @@
 
 <body>
     <header>
-        <img src="imagens/header.png" alt="Header" width="95%" height="300px">
+        <img src="imagens/header.png" alt="Header" width="100%" height="300px">
     </header>
     <nav>
-        <div><a href="home.html">Início</a> |
-            <a href="diretores.html">Diretores e Países</a> |
-            <a href="paises.html">Tabela de Produção</a> |
+        <div><a href="home.html">Início</a>
+            <a href="diretores.html">Diretores e Países</a>
+            <a href="paises.html">Tabela de Produção</a>
             <a href="populares.html">Filmes Populares</a>
         </div>
     </nav>
@@ -179,13 +191,13 @@
             </table>
         </main>
         <footer>
-        <div class="newsletter">
-            <h4>Assine nossa newsletter!</h4>
-            <input type="email" placeholder="Digite seu e-mail">
-            <br>
-            <button>Enviar</button>
-        </div>
-    </footer>
+            <div class="newsletter">
+                <h4>Assine nossa newsletter!</h4>
+                <input type="email" placeholder="Digite seu e-mail">
+                <br>
+                <button>Enviar</button>
+            </div>
+        </footer>
     </body>
 
 </html>
