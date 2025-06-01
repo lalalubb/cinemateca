@@ -7,10 +7,10 @@
     <title>Document</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(255, 217, 223);
-            margin: 0;
-            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;  /*Define as fontes utilizadas na página*/
+            background-color: rgb(255, 217, 223);  /*Define a cor de fundo da página*/
+            margin: 0;  /*Remove as bordas padrão do body*/
+            padding: 0; /*Remove o espaçamento padrão*/
             box-sizing: border-box;
         }
 
@@ -19,103 +19,91 @@
         }
 
         nav div {
-            display: flex;
-            /* Deixa os links em linha */
-            gap: 30px;
-            /* Espaço entre os links */
-            justify-content: center;
-            /* Centraliza na página */
-            margin-top: 20px;
-            /* Dá espaço entre a imagem e o nav */
-            font-size: 18px;
+            display: flex;  /* Deixa os links em linha */
+            gap: 30px;  /* Espaço entre os links */
+            justify-content: center;  /* Centraliza na página */
+            margin-top: 20px;  /* Dá espaço entre a imagem e o nav */
+            font-size: 18px;  /* Ajusta o tamanho da fonte */
         }
 
         nav a {
-            color: black;
-            text-decoration: none;
-
+            color: black; /* Cor do texto */
+            text-decoration: none;  /* Remove o sublinhado padrão dos links */
         }
 
-
-        nav a:hover {
-            color: darkolivegreen;
-            font-size: larger;
-            font-weight: bold;
-        }
-
-        main {
-            margin: 40px;
+        nav a:hover {  /* Estiliza ação ao passar pelo item */
+            color: darkolivegreen;  /* Muda a cor ao passar o mouse */
+            font-size: larger;  /* Aumenta a fonte ao passar o mouse */
+            font-weight: bold;  /* Coloca em negrito o texto */
         }
 
         main {
-            margin: 40px;
+            margin: 40px;  /* Adiciona margem ao conteúdo dentro da main */
         }
 
         h1 {
-            text-align: center;
+            text-align: center;  /* Alinha o texto ao centro */
         }
 
         .card {
-            width: 750px;
-            padding: 20px;
-            text-align: center;
-            margin: auto;
+            width: 750px;  /* Largura do card */
+            padding: 20px;  /* Espaçamento interno */
+            text-align: center;  /* Alinha o texto/imagem ao centro */
+            margin: auto;  /* Centraliza a .div card ao centro da página */
         }
 
         .card h2 {
-            color: rgb(72, 94, 35);
+            color: rgb(72, 94, 35);  /* Muda a cor do h2 */
         }
 
         .card img {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            /* deslocamento-x, deslocamento-y, blur, cor */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  /* deslocamento-x, deslocamento-y, blur, cor */
         }
 
         .card p {
-            text-align: justify;
-            font-size: large;
+            text-align: justify;  /* deslocamento-x, deslocamento-y, blur, cor */
+            font-size: large;  /* Tamanho da fonte */
         }
 
         .newsletter {
-            background-color: #ffc0cb;
-            /* rosa */
-            padding: 20px;
-            border-radius: 20px;
-            text-align: center;
-            width: 300px;
-            margin: auto;
+            background-color: #ffc0cb;  /* Define o fundo rosa da caixa */
+            padding: 20px;  /* Espaçamento interno da caixa */
+            border-radius: 20px;   /* Cantos arredondados da caixa */
+            text-align: center;  /* Centraliza o texto e os inputs */
+            width: 300px;   /* Largura da caixa */
+            margin: auto;  /* Centraliza a caixa horizontalmente */
         }
 
         .newsletter h4 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #ff1493;
+            font-size: 24px;  /* Tamanho da fonte do título */
+            margin-bottom: 15px;  /* Espaço abaixo do título */
+            color: #ff1493;  /*Cor do texto*/
         }
 
         .newsletter input[type="email"] {
-            padding: 10px;
-            width: 80%;
-            border: none;
-            border-radius: 15px;
-            margin-bottom: 10px;
+            padding: 10px;  /* Espaço interno do campo de email */
+            width: 80%;  /* Largura relativa ao container */
+            border: none;  /* Remove a borda padrão */
+            border-radius: 15px;  /* Cantos arredondados do campo */
+            margin-bottom: 10px;  /* Espaço abaixo do campo de email */
         }
 
         .newsletter button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 15px;
-            background-color: #ff69b4;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
+            padding: 10px 20px;  /* Espaço interno do botão (vertical e horizontal) */
+            border: none;   /* Remove borda padrão do botão */
+            border-radius: 15px;  /* Cantos arredondados do botão */
+            background-color: #ff69b4; /* Cor rosa mais escura no botão */
+            color: white;  /* Cor do texto do botão */
+            font-weight: bold;   /* Deixa o texto em negrito */
+            cursor: pointer;  /* Muda o cursor para "mãozinha" ao passar por cima */
         }
 
         .newsletter button:hover {
-            background-color: #ff1493;
+            background-color: #ff1493;  /* Cor de fundo do botão ao passar o mouse (hover) */
         }
 
         footer {
-            padding-bottom: 50px;
+            padding-bottom: 50px;  /* Espaçamento inferior */
         }
     </style>
 </head>
@@ -125,9 +113,9 @@
         <img src="imagens/header.png" alt="Header" width="100%" height="300px">
     </header>
     <nav>
-        <div><a href="home.html">Início</a> 
-            <a href="diretores.html">Diretores e Países</a> 
-            <a href="paises.html">Tabela de Produção</a> 
+        <div><a href="home.html">Início</a>
+            <a href="diretores.html">Diretores e Países</a>
+            <a href="paises.html">Tabela de Produção</a>
             <a href="populares.html">Filmes Populares</a>
         </div>
     </nav>
@@ -192,15 +180,15 @@
                 Seu nome entrou no radar global como uma diretora com assinatura autoral desde o primeiro longa — uma
                 raridade no mercado.</p>
         </div>
-        </main>
-        <footer>
+    </main>
+    <footer>
         <div class="newsletter">
             <h4>Assine nossa newsletter!</h4>
             <input type="email" placeholder="Digite seu e-mail">
             <br>
             <button>Enviar</button>
         </div>
-        </footer>
+    </footer>
 </body>
 
 </html>
